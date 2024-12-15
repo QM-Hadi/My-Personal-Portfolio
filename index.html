@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <!-- navbar is started here -->
+
+    <header class="mt-4">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <!-- Logo and Title -->
+            <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="./Images/logo.png" class="h-24 w-24" alt="Portfolio Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Hadi's Portfolio</span>
+            </a>
+    
+            <!-- Mobile Menu Button -->
+            <button data-collapse-toggle="navbar-multi-level" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-multi-level" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                    <li>
+                        <a href="#home"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                    </li>
+                    <li>
+                        <a href="#features"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#skills"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#contact"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    </li>
+                    <li>
+                        <a href="./Images/cv.webp" download="Hadi_cv.webp"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Download
+                            CV
+                            <i class="fa-solid fa-download ml-2"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- hero section is started here -->
+    <section>
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:grid-cols-12 lg:gap-8 xl:gap-0 lg:py-16">
+            <!-- Text Section -->
+            <div class="lg:col-span-7 flex flex-col justify-center">
+                <h1
+                    class="text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-900 dark:text-white mb-4">
+                    Hi , I am
+                    <span class="text-purple-600">Hadi</span>
+                </h1>
+                <p class="text-gray-500 dark:text-gray-400 max-w-2xl mb-6 font-light lg:text-xl md:text-lg">
+                    and I am Passionate to
+                    <span id="element" class="text-purple-600 text-3xl"></span>
+                </p>
+                <div class="flex space-x-3">
+                    <a href="./Images/cv.webp" download="Hadi_cv.webp"
+                        class="inline-flex  items-center px-5 py-3 text-base font-medium text-white bg-purple-600 rounded-lg hover:bg-purple-500 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                        Download CV
+                        <i class="fa-solid fa-download ml-2"></i>
+                    </a>
+                    <a href="https://github.com/QM-Hadi"
+                        class="inline-flex items-center px-5 py-3 text-base font-medium text-white bg-purple-600 rounded-lg hover:bg-purple-500 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                        Github
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Image Section -->
+            <div class="lg:col-span-5 lg:flex flex flex-col rounded-md">
+                <img src="./Images/hero_secImage.png" alt="mockup">
+            </div> 
+        </div>
+    </section>
+
+    <hr class="ml-10 mr-10">
+
+    <!-- About Section is started here -->
+    <section id="about">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-white">About <span class="text-purple-600">Hadi</span></h1>
+        </div>
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7 flex flex-col gap-5">
+                <div>
+                    <span class="text-2xl text-white">Name :</span>
+                    <span class="text-gray-500">Hadi</span>
+                </div>
+                <div>
+                    <span class="text-2xl text-white">Faculty :</span>
+                    <span class="text-gray-500">FrontEnd & BackEnd Developer</span>
+                </div>
+                <div>
+                    <span class="text-2xl text-white">D.O.B :</span>
+                    <span class="text-gray-500">29-march-2004</span>
+                </div>
+                <div>
+                    <span class="text-2xl text-white">Age :</span>
+                    <span class="text-gray-500">20</span>
+                </div>
+                <div>
+                    <span class="text-2xl text-white">Email:</span>
+                    <span class="text-gray-500">coderhadii@gmail.com</span>
+                </div>
+                <div>
+                    <span class="text-2xl text-white">Contact No :</span>
+                    <span class="text-gray-500">+923357249918</span>
+                </div>
+                <div>
+                    <span class="text-2xl text-white">Company :</span>
+                    <span class="text-gray-500">Individual</span>
+                </div>  
+            </div>
+            <div class="lg:col-span-5 lg:flex flex flex-col rounded-md mb-20">
+                <img src="./Images/My Pic.png" alt="mockup">
+            </div>  
+        </div>
+    </section>
+
+    <hr class="ml-10 mr-10">
+
+    <!-- Projects section is started here -->
+
+    <section class="py-16" id="features">
+        <div class="container mx-auto px-6 lg:px-20">
+            <!-- Section Title -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white">Complete Projects</h2>
+                <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+                    Discover how our platform empowers you with tools to streamline your workflows and unlock potential.
+                </p>
+            </div>
+    
+            <!-- Features Grid -->
+          <a href="https://qm-hadi.github.io/js-calculator/">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Feature Item -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 text-blue-600 mb-6">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white">Scientific Calculator</h3>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">
+                        Plan it, create it, and launch it. Achieve your marketing goals seamlessly with our platform.
+                    </p>
+                   
+                </div>
+          </a>
+                <!-- Feature Item -->
+              <a href="https://qm-hadi.github.io/weather_app/">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 text-blue-600 mb-6">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-white">Weather Web App</h3>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">
+                        We Can easily check weather any city of the world. 
+                    </p>
+                </div>
+              </a>
+    
+                <!-- Feature Item -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 text-blue-600 mb-6">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                            <path
+                                d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-white">Ecommerce Website</h3>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">
+                        Automate tasks, integrate tools, and streamline workflows for maximum efficiency.
+                    </p>
+                </div>
+    
+                <!-- Feature Item -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 text-blue-600 mb-6">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                            <path
+                                d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-white">Wordpress Developer</h3>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">
+                        Automate tasks, integrate tools, and streamline workflows for maximum efficiency.
+                    </p>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    <hr class="ml-10 mr-10">
+
+    <!-- skills section is started here -->
+
+    <section id="skills" class="py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-purple-600">My <span class="text-white">Skills</span></h2>
+            <p class="text-gray-600 mt-4">Here is my skills to represent my Expertise</p>
+        </div>
+
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="skill-bar bg-white p-6 rounded-lg shadow-md">
+                <div class="info flex justify-between items-center mb-4">
+                    <p class="text-gray-800 font-semibold">HTML</p>
+                    <p class="text-gray-600">90%</p>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div class="bg-purple-600 h-3 rounded-full" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar bg-white p-6 rounded-lg shadow-md">
+                <div class="info flex justify-between items-center mb-4">
+                    <p class="text-gray-800 font-semibold">CSS</p>
+                    <p class="text-gray-600">95%</p>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div class="bg-purple-600 h-3 rounded-full" style="width: 95%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar bg-white p-6 rounded-lg shadow-md">
+                <div class="info flex justify-between items-center mb-4">
+                    <p class="text-gray-800 font-semibold">JavaScript</p>
+                    <p class="text-gray-600">85%</p>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div class="bg-purple-600 h-3 rounded-full" style="width: 85%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar bg-white p-6 rounded-lg shadow-md">
+                <div class="info flex justify-between items-center mb-4">
+                    <p class="text-gray-800 font-semibold">React Js</p>
+                    <p class="text-gray-600">78%</p>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div class="bg-purple-600 h-3 rounded-full" style="width: 78%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar bg-white p-6 rounded-lg shadow-md">
+                <div class="info flex justify-between items-center mb-4">
+                    <p class="text-gray-800 font-semibold">Next Js</p>
+                    <p class="text-gray-600">80%</p>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div class="bg-purple-600 h-3 rounded-full" style="width: 80%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar bg-white p-6 rounded-lg shadow-md">
+                <div class="info flex justify-between items-center mb-4">
+                    <p class="text-gray-800 font-semibold">Tailwind CSS</p>
+                    <p class="text-gray-600">90%</p>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div class="bg-purple-600 h-3 rounded-full" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar bg-white p-6 rounded-lg shadow-md">
+                <div class="info flex justify-between items-center mb-4">
+                    <p class="text-gray-800 font-semibold">Bootstrap</p>
+                    <p class="text-gray-600">60%</p>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div class="bg-purple-600 h-3 rounded-full" style="width: 60%;"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <hr class="ml-10 mr-10">
+
+    <!-- contact section is started here -->
+
+    <section id="contact">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+                Contact Me
+            </h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+                Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan?
+                Let me know.
+            </p>
+            <form id="contactForm" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
+                        email</label>
+                    <input type="email" id="email" name="email"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="name@example.com" required>
+                </div>
+                <div>
+                    <label for="subject"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                    <input type="text" id="subject" name="subject"
+                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
+                        message</label>
+                    <textarea id="message" name="message" rows="6"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        placeholder="Leave a comment..." required></textarea>
+                </div>
+                <button type="submit"
+                    class="py-3 px-5 bg-purple-600 text-sm font-medium text-center text-white rounded-lg sm:w-fit hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800">
+                    Send message
+                </button>
+            </form>
+            <p id="status" class="mt-4 text-center text-sm hidden"></p>
+        </div>
+    </section>
+
+
+
+    <!-- section  -->
+
+ 
+
+
+
+    <!-- this is section work -->
+
+    <script>
+        // Add an event listener for the scroll event
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.navbar a');  // Adjust this selector as needed
+
+            let currentSection = '';
+
+            // Check which section is in the viewport
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+
+                if (window.scrollY >= sectionTop - sectionHeight / 3) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            // Highlight the corresponding navbar link
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+
+    <!-- Firebase SDK and Integration -->
+    <script>
+        // Firebase configuration (Replace these with your Firebase project details)
+        const firebaseConfig = {
+            apiKey: "AIzaSyCRyaysagQCtXHwo4UsmLwa5LQg1v38-xE",
+            authDomain: "practice-db-de317.firebaseapp.com",
+            databaseURL: "https://practice-db-de317-default-rtdb.firebaseio.com",
+            projectId: "practice-db-de317",
+            storageBucket: "practice-db-de317.firebasestorage.app",
+            messagingSenderId: "792766249164",
+            appId: "1:792766249164:web:94e39ad306a5bd9e9eaa69",
+            measurementId: "G-Z9SM6VJ6CH"
+        };
+
+        // Initialize Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+        const database = firebase.getDatabase(app); // Ensure you're using Realtime Database
+
+        // Handle form submission
+        const contactForm = document.getElementById("contactForm");
+        const status = document.getElementById("status");
+
+        contactForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            // Get form values
+            const email = document.getElementById("email").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+
+            // Push data to Firebase
+            firebase.push(firebase.ref(database, "messages"), {
+                email: email,
+                subject: subject,
+                message: message,
+                timestamp: new Date().toISOString()
+            }).then(() => {
+                // Success message
+                status.textContent = "Message sent successfully!";
+                status.style.color = "green";
+                status.classList.remove("hidden");
+                contactForm.reset();
+            }).catch((error) => {
+                // Error message
+                console.error("Error sending message:", error);
+                status.textContent = "Failed to send message. Please try again.";
+                status.style.color = "red";
+                status.classList.remove("hidden");
+            });
+        });
+
+    </script>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.querySelector('[data-collapse-toggle="navbar-multi-level"]');
+            const menu = document.getElementById('navbar-multi-level');
+
+            toggleButton.addEventListener('click', function () {
+                menu.classList.toggle('hidden'); // Toggles the 'hidden' class to show/hide the menu
+            });
+        });
+
+
+    </script>
+    <!-- footer sectio is started here -->
+
+    <footer>
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/"
+                    class="hover:underline">Hadi</a>. All Rights Reserved.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Digital Marketing Expert.', 'Web Designer.', 'Wordpress Developer.'],
+            typeSpeed: 60,
+        });
+    </script>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
